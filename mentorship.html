@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HerLead Academy - Empowering women through accessible, practical, income-generating skills and online courses. No prior education required.">
-    <meta name="keywords" content="women empowerment, online courses, skills training, Rwanda, financial independence">
+    <meta name="description" content="HerLead Academy Mentorship - Connect with experienced women leaders who will guide you on your journey to success.">
+    <meta name="keywords" content="mentorship, women empowerment, leadership, Rwanda, coaching, HerLead Academy">
     <meta name="author" content="HerLead Academy">
-    <meta property="og:title" content="HerLead Academy - Empowering Women Through Skills & Opportunity">
-    <meta property="og:description" content="Learn practical, income-generating skills at your own pace. Join thousands of women building financial independence.">
-    <title>HerLead Academy - Empowering Women Through Skills & Opportunity</title>
-    
+    <title>Mentorship - HerLead Academy</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         /* ========== CSS VARIABLES & RESET ========== */
         :root {
@@ -41,15 +39,8 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -62,9 +53,7 @@
         /* ========== HEADER & NAVIGATION ========== */
         .navbar {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             z-index: 1000;
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(20px);
@@ -95,9 +84,7 @@
             letter-spacing: -0.5px;
         }
 
-        .logo i {
-            font-size: 1.8rem;
-        }
+        .logo i { font-size: 1.8rem; }
 
         .nav-links {
             display: flex;
@@ -118,22 +105,17 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
+            bottom: 0; left: 0;
+            width: 0; height: 2px;
             background: var(--primary-maroon);
             transition: var(--transition);
         }
 
         .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
+        .nav-links a.active::after { width: 100%; }
 
-        .nav-links a:hover {
-            color: var(--primary-maroon);
-        }
+        .nav-links a:hover,
+        .nav-links a.active { color: var(--primary-maroon); }
 
         .cta-btn {
             background: var(--primary-maroon);
@@ -165,17 +147,13 @@
             transition: var(--transition);
         }
 
-        .mobile-toggle:hover {
-            color: var(--primary-maroon);
-        }
+        .mobile-toggle:hover { color: var(--primary-maroon); }
 
         /* ========== MOBILE NAVIGATION ========== */
         .mobile-nav {
             display: none;
             position: fixed;
-            top: 70px;
-            left: 0;
-            right: 0;
+            top: 70px; left: 0; right: 0;
             background: var(--white);
             padding: 2rem;
             box-shadow: var(--shadow-lg);
@@ -185,10 +163,7 @@
             transition: var(--transition);
         }
 
-        .mobile-nav.active {
-            transform: translateY(0);
-            opacity: 1;
-        }
+        .mobile-nav.active { transform: translateY(0); opacity: 1; }
 
         .mobile-nav ul {
             list-style: none;
@@ -207,9 +182,7 @@
             transition: var(--transition);
         }
 
-        .mobile-nav a:hover {
-            color: var(--primary-maroon);
-        }
+        .mobile-nav a:hover { color: var(--primary-maroon); }
 
         /* ========== HERO SECTION ========== */
         .hero {
@@ -225,10 +198,8 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
+            top: -50%; right: -20%;
+            width: 800px; height: 800px;
             background: radial-gradient(circle, var(--accent-pink) 0%, transparent 70%);
             opacity: 0.3;
             animation: float 20s infinite ease-in-out;
@@ -237,10 +208,8 @@
         .hero::after {
             content: '';
             position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
+            bottom: -30%; left: -10%;
+            width: 600px; height: 600px;
             background: radial-gradient(circle, var(--light-teal) 0%, transparent 70%);
             opacity: 0.3;
             animation: float 15s infinite ease-in-out reverse;
@@ -381,28 +350,7 @@
             box-shadow: 0 20px 60px rgba(139, 21, 56, 0.15);
         }
 
-        .hero-image i {
-            font-size: 5rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .hero-image span {
-            font-weight: 700;
-            font-size: 1.8rem;
-            color: var(--primary-maroon);
-        }
-
-        /* ========== STATS SECTION ========== */
+        /* ========== STATS BAR ========== */
         .stats-bar {
             background: var(--white);
             padding: 3rem 5%;
@@ -439,16 +387,14 @@
         }
 
         .stat-label {
+            font-size: 0.9rem;
             color: var(--text-gray);
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
             font-weight: 500;
+            margin-top: 0.5rem;
         }
 
         /* ========== SECTION STYLES ========== */
-        section {
-            padding: 100px 5%;
-        }
+        section { padding: 100px 5%; }
 
         .section-header {
             text-align: center;
@@ -488,12 +434,12 @@
             line-height: 1.7;
         }
 
-        /* ========== ABOUT SECTION ========== */
-        .about {
+        /* ========== ABOUT-STYLE: WHY MENTORSHIP ========== */
+        .why-section {
             background: var(--white);
         }
 
-        .about-content {
+        .why-content {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -502,48 +448,32 @@
             align-items: center;
         }
 
-        .about-visual {
-            position: relative;
-        }
+        .why-visual { position: relative; }
 
-        .about-image {
+        .why-image {
             width: 100%;
             height: 500px;
             background: var(--gradient-soft);
             border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(139, 21, 56, 0.1);
         }
 
-        .about-image i {
-            font-size: 5rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            z-index: 1;
+        .why-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
         }
 
-        .about-image p {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--secondary-teal);
-            margin-top: 1rem;
-            z-index: 1;
-        }
-
-        .about-text h2 {
+        .why-text h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
             color: var(--text-dark);
         }
 
-        .about-text p {
+        .why-text p {
             color: var(--text-gray);
             margin-bottom: 1.5rem;
             line-height: 1.8;
@@ -586,12 +516,12 @@
             line-height: 1.6;
         }
 
-        /* ========== COURSES SECTION ========== */
-        .courses {
+        /* ========== COURSES-STYLE: PROGRAMS ========== */
+        .programs {
             background: var(--gradient-soft);
         }
 
-        .courses-grid {
+        .programs-grid {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -599,7 +529,7 @@
             gap: 2.5rem;
         }
 
-        .course-card {
+        .program-card {
             background: var(--white);
             border-radius: 25px;
             overflow: hidden;
@@ -609,53 +539,63 @@
             flex-direction: column;
         }
 
-        .course-card:hover {
+        .program-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-lg);
         }
 
-        .course-header {
+        .program-header {
             background: var(--gradient-primary);
-            height: 220px;
+            height: 160px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            gap: 0.75rem;
             position: relative;
             overflow: hidden;
         }
 
-        .course-header::before {
+        .program-header::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 300px;
-            height: 300px;
+            top: -50%; right: -50%;
+            width: 300px; height: 300px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
         }
 
-        .course-header i {
-            font-size: 4.5rem;
+        .program-header i {
+            font-size: 3rem;
             color: var(--white);
             z-index: 2;
         }
 
-        .course-body {
+        .program-header span {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.15);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            z-index: 2;
+        }
+
+        .program-body {
             padding: 2rem;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .course-body h3 {
+        .program-body h3 {
             font-size: 1.4rem;
             margin-bottom: 1rem;
             color: var(--text-dark);
             font-weight: 700;
         }
 
-        .course-body p {
+        .program-body p {
             color: var(--text-gray);
             margin-bottom: 1.5rem;
             flex-grow: 1;
@@ -663,63 +603,64 @@
             font-size: 0.95rem;
         }
 
-        .course-body ul {
+        .program-features {
             list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
             margin-bottom: 1.5rem;
+        }
+
+        .program-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
             font-size: 0.9rem;
-            color: var(--text-gray);
+            color: var(--text-dark);
         }
 
-        .course-body li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .course-body li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary-teal);
-            font-weight: bold;
-        }
-
-        .course-btn {
+        .program-features li::before {
+            content: '';
+            width: 8px; height: 8px;
             background: var(--secondary-teal);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .program-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--gradient-primary);
             color: var(--white);
-            padding: 0.85rem 1.75rem;
+            padding: 0.85rem 1.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            text-align: center;
+            font-size: 0.9rem;
             transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            align-self: flex-start;
-            font-size: 0.95rem;
+            margin-top: auto;
         }
 
-        .course-btn:hover {
-            background: var(--primary-dark-maroon);
+        .program-btn:hover {
             transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(139, 21, 56, 0.3);
         }
 
-        /* ========== TESTIMONIALS SECTION (PLACEHOLDER) ========== */
-        .testimonials {
+        /* ========== DARK SECTION: MEET MENTORS ========== */
+        .mentors-section {
             background: var(--black-bg);
             color: var(--white);
             position: relative;
             overflow: hidden;
         }
 
-        .testimonials::before {
+        .mentors-section::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
                 linear-gradient(45deg, rgba(139, 21, 56, 0.1) 25%, transparent 25%),
                 linear-gradient(-45deg, rgba(139, 21, 56, 0.1) 25%, transparent 25%),
                 linear-gradient(45deg, transparent 75%, rgba(139, 21, 56, 0.1) 75%),
@@ -730,91 +671,176 @@
             z-index: 0;
         }
 
-        .testimonials-content {
-            max-width: 1000px;
+        .mentors-section .section-header,
+        .mentors-section .section-subtitle { position: relative; z-index: 1; }
+
+        .mentors-section .section-title { color: var(--white); }
+        .mentors-section .section-subtitle { color: rgba(255,255,255,0.8); }
+
+        .mentors-grid {
+            max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .mentor-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 25px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .mentor-photo {
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .mentor-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .mentor-card:hover .mentor-photo img { transform: scale(1.05); }
+
+        .mentor-info { padding: 1.75rem; }
+
+        .mentor-info h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.25rem;
+        }
+
+        .mentor-role {
+            font-size: 0.875rem;
+            font-weight: 600;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.75rem;
+        }
+
+        .mentor-info p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .mentor-expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .expertise-tag {
+            background: rgba(27, 155, 155, 0.2);
+            color: var(--light-teal);
+            padding: 0.3rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .mentor-social { display: flex; gap: 0.75rem; }
+
+        .mentor-social a {
+            width: 36px; height: 36px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--white);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .mentor-social a:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ========== CTA SECTION: HOW IT WORKS ========== */
+        .how-section {
+            background: var(--gradient-soft);
+        }
+
+        .steps-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .steps-grid::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: calc(12.5% + 30px);
+            right: calc(12.5% + 30px);
+            height: 2px;
+            background: var(--gradient-primary);
+            z-index: 0;
+        }
+
+        .step {
             text-align: center;
             position: relative;
             z-index: 1;
         }
 
-        .testimonials-icon {
-            font-size: 4rem;
-            color: var(--accent-pink);
-            margin-bottom: 1.5rem;
-        }
-
-        .testimonials-message h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .testimonials-message p {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .testimonials-cta {
+        .step-number {
+            width: 80px; height: 80px;
             background: var(--gradient-primary);
-            color: var(--white);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
+            border-radius: 50%;
+            display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 0.95rem;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            box-shadow: 0 8px 25px rgba(139, 21, 56, 0.25);
         }
 
-        .testimonials-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(139, 21, 56, 0.4);
-        }
-
-        /* ========== CTA SECTION ========== */
-        .cta-section {
-            background: var(--gradient-soft);
-        }
-
-        .cta-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .cta-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .step h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
             color: var(--text-dark);
+            margin-bottom: 0.5rem;
         }
 
-        .cta-content h2 span {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .cta-content p {
-            font-size: 1.1rem;
+        .step p {
             color: var(--text-gray);
-            margin-bottom: 2rem;
-            line-height: 1.8;
+            font-size: 0.9rem;
+            line-height: 1.6;
         }
 
-        /* ========== CONTACT SECTION ========== */
-        .contact {
+        /* ========== CONTACT-STYLE: APPLY SECTION ========== */
+        .apply-section {
             background: var(--white);
         }
 
-        .contact-container {
+        .apply-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -822,34 +848,33 @@
             gap: 4rem;
         }
 
-        .contact-info h3 {
+        .apply-info h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
             color: var(--text-dark);
         }
 
-        .contact-info > p {
+        .apply-info > p {
             color: var(--text-gray);
             margin-bottom: 2rem;
             line-height: 1.7;
         }
 
-        .contact-methods {
+        .apply-methods {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
 
-        .contact-method {
+        .apply-method {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
         }
 
         .method-icon {
-            width: 50px;
-            height: 50px;
+            width: 50px; height: 50px;
             background: var(--gradient-primary);
             border-radius: 15px;
             display: flex;
@@ -859,10 +884,7 @@
             margin-top: 0.25rem;
         }
 
-        .method-icon i {
-            font-size: 1.3rem;
-            color: var(--white);
-        }
+        .method-icon i { font-size: 1.3rem; color: var(--white); }
 
         .method-info h4 {
             font-size: 0.95rem;
@@ -877,41 +899,13 @@
             font-size: 1rem;
         }
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .social-link {
-            width: 50px;
-            height: 50px;
-            background: var(--gray-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: var(--text-dark);
-            transition: var(--transition);
-            font-size: 1.2rem;
-        }
-
-        .social-link:hover {
-            background: var(--gradient-primary);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-
-        .contact-form {
+        .apply-form {
             background: var(--gray-light);
             padding: 2.5rem;
             border-radius: 25px;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+        .form-group { margin-bottom: 1.5rem; }
 
         .form-group label {
             display: block;
@@ -922,7 +916,8 @@
         }
 
         .form-group input,
-        .form-group textarea {
+        .form-group textarea,
+        .form-group select {
             width: 100%;
             padding: 0.9rem;
             border: 2px solid var(--gray-medium);
@@ -931,23 +926,26 @@
             font-size: 0.95rem;
             transition: var(--transition);
             color: var(--text-dark);
+            background: var(--white);
         }
 
         .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: var(--text-light);
-        }
+        .form-group textarea::placeholder { color: var(--text-light); }
 
         .form-group input:focus,
-        .form-group textarea:focus {
+        .form-group textarea:focus,
+        .form-group select:focus {
             outline: none;
             border-color: var(--primary-maroon);
             box-shadow: 0 0 0 3px rgba(139, 21, 56, 0.1);
         }
 
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
+        .form-group textarea { min-height: 120px; resize: vertical; }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
         }
 
         .submit-btn {
@@ -973,10 +971,7 @@
             box-shadow: 0 10px 30px rgba(139, 21, 56, 0.4);
         }
 
-        .submit-btn:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-        }
+        .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
 
         .form-success {
             display: none;
@@ -1042,13 +1037,8 @@
             font-weight: 600;
         }
 
-        .footer-links ul {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.75rem;
-        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
 
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
@@ -1057,9 +1047,7 @@
             transition: var(--transition);
         }
 
-        .footer-links a:hover {
-            color: var(--accent-pink);
-        }
+        .footer-links a:hover { color: var(--accent-pink); }
 
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1076,14 +1064,10 @@
             font-size: 0.85rem;
         }
 
-        .footer-social {
-            display: flex;
-            gap: 1rem;
-        }
+        .footer-social { display: flex; gap: 1rem; }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
@@ -1094,17 +1078,13 @@
             transition: var(--transition);
         }
 
-        .footer-social a:hover {
-            background: var(--gradient-primary);
-        }
+        .footer-social a:hover { background: var(--gradient-primary); }
 
         /* ========== SCROLL TO TOP ========== */
         .scroll-top {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
+            bottom: 30px; right: 30px;
+            width: 50px; height: 50px;
             background: var(--gradient-primary);
             border-radius: 50%;
             display: flex;
@@ -1119,190 +1099,72 @@
             z-index: 100;
         }
 
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            transform: translateY(-5px);
-        }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-5px); }
 
         /* ========== RESPONSIVE DESIGN ========== */
         @media (max-width: 1024px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-benefits {
-                align-items: center;
-            }
-
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .courses-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .mission-vision {
-                grid-template-columns: 1fr;
-            }
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .hero-text h1 { font-size: 2.5rem; }
+            .hero-buttons { justify-content: center; }
+            .hero-benefits { align-items: center; }
+            .hero-visual { display: none; }
+            .why-content { grid-template-columns: 1fr; }
+            .programs-grid { grid-template-columns: repeat(2, 1fr); }
+            .mentors-grid { grid-template-columns: repeat(2, 1fr); }
+            .apply-container { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid::before { display: none; }
+            .mission-vision { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: block;
-            }
-
-            .mobile-nav {
-                display: block;
-            }
-
-            .hero {
-                padding: 100px 5% 60px;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1rem;
-            }
-
-            .hero-visual {
-                min-height: 300px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .hero-buttons a {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .section-subtitle {
-                font-size: 1rem;
-            }
-
-            .stats-container,
-            .courses-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .about-text h2,
-            .contact-info h3 {
-                font-size: 1.5rem;
-            }
-
-            section {
-                padding: 60px 5%;
-            }
-
-            .section-header {
-                margin-bottom: 2.5rem;
-            }
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .mobile-nav { display: block; }
+            .hero { padding: 100px 5% 60px; }
+            .hero-text h1 { font-size: 2rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons a { width: 100%; justify-content: center; }
+            section { padding: 60px 5%; }
+            .section-title { font-size: 1.8rem; }
+            .section-subtitle { font-size: 1rem; }
+            .section-header { margin-bottom: 2.5rem; }
+            .programs-grid, .mentors-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: 1fr 1fr; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .form-row { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 1.5rem;
-            }
-
-            .btn-primary,
-            .btn-secondary {
-                padding: 0.85rem 1.5rem;
-                font-size: 0.9rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .course-header {
-                height: 150px;
-            }
-
-            .course-header i {
-                font-size: 3rem;
-            }
-
-            .testimonials-message h3 {
-                font-size: 1.5rem;
-            }
-
-            .cta-content h2 {
-                font-size: 1.8rem;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 1rem;
-            }
+            .hero-text h1 { font-size: 1.5rem; }
+            .btn-primary, .btn-secondary { padding: 0.85rem 1.5rem; font-size: 0.9rem; }
+            .section-title { font-size: 1.5rem; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 1rem; }
         }
     </style>
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
             <img src="Her Lead Academy Logo.png" alt="HerLead Academy" style="height:40px;width:auto;">
             HerLead Academy
         </a>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="mentorship.html">Mentorship</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="mentorship.html" class="active">Mentorship</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
-        <a href="#courses" class="cta-btn">Get Started</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <a href="#apply" class="cta-btn">Apply Now</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
@@ -1310,11 +1172,11 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
             <li><a href="mentorship.html">Mentorship</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -1322,282 +1184,370 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Empowering Women Through <span>Skills & Opportunity</span></h1>
-                <p class="hero-subtitle">Learn practical, income-generating skills at your own pace. Join thousands of women building their path to financial independence and personal growth.</p>
-                
+                <h1>Your Growth, Guided by <span>Experienced Leaders</span></h1>
+                <p class="hero-subtitle">Connect with seasoned women professionals who have walked the path before you. Get personal guidance, real-world advice, and the support you need to reach your goals faster.</p>
+
                 <div class="hero-benefits">
                     <div class="benefit">
                         <i class="fas fa-check-circle"></i>
-                        <span>No prior education required</span>
+                        <span>One-on-one sessions with a dedicated mentor</span>
                     </div>
                     <div class="benefit">
                         <i class="fas fa-check-circle"></i>
-                        <span>Learn at your own pace, anytime, anywhere</span>
+                        <span>Tailored guidance based on your unique goals</span>
                     </div>
                     <div class="benefit">
                         <i class="fas fa-check-circle"></i>
-                        <span>Practical skills that generate real income</span>
+                        <span>Build confidence, skills, and a strong network</span>
                     </div>
                 </div>
 
                 <div class="hero-buttons">
-                    <a href="#courses" class="btn-primary">
-                        <i class="fas fa-graduation-cap"></i>
-                        Start Learning Now
+                    <a href="#apply" class="btn-primary">
+                        <i class="fas fa-user-plus"></i>
+                        Apply as Mentee
                     </a>
-                    <a href="#about" class="btn-secondary">
-                        <i class="fas fa-info-circle"></i>
-                        Learn More
+                    <a href="#mentors" class="btn-secondary">
+                        <i class="fas fa-users"></i>
+                        Meet Our Mentors
                     </a>
                 </div>
             </div>
 
             <div class="hero-visual">
                 <div class="hero-image">
-                    <img src="Women-1.jpg" alt="Women Leadership" style="width:100%;height:100%;object-fit:cover;border-radius:30px;">
+                    <img src="Women-1.jpg" alt="Mentorship at HerLead Academy" style="width:100%;height:100%;object-fit:cover;border-radius:30px;">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats Bar -->
     <div class="stats-bar">
         <div class="stats-container">
             <div class="stat-item">
-                <div class="stat-number" data-target="15000">0</div>
-                <div class="stat-label">Women Empowered</div>
+                <div class="stat-number">120+</div>
+                <div class="stat-label">Active Mentors</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="50">0</div>
-                <div class="stat-label">+ Courses</div>
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Women Mentored</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="92">0</div>
-                <div class="stat-label">% Completion Rate</div>
+                <div class="stat-number">94%</div>
+                <div class="stat-label">Success Rate</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="3">0</div>
-                <div class="stat-label">Years of Impact</div>
+                <div class="stat-number">3</div>
+                <div class="stat-label">Program Tracks</div>
             </div>
         </div>
     </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Why Mentorship -->
+    <section class="why-section" id="why">
         <div class="section-header">
-            <span class="section-badge">Who We Are</span>
-            <h2 class="section-title">About <span>HerLead Academy</span></h2>
-            <p class="section-subtitle">We believe that every woman deserves access to education and opportunity, regardless of her background or circumstances.</p>
+            <span class="section-badge">Why It Matters</span>
+            <h2 class="section-title">Why <span>Mentorship?</span></h2>
+            <p class="section-subtitle">Having the right mentor can be the single most powerful catalyst for your personal and professional growth.</p>
         </div>
 
-        <div class="about-content">
-            <div class="about-visual">
-                <div class="about-image">
-                    <img src="Women-2.jpg" alt="Empowering Women" style="width:100%;height:100%;object-fit:cover;border-radius:30px;">
+        <div class="why-content">
+            <div class="why-visual">
+                <div class="why-image">
+                    <img src="Women-2.jpg" alt="Mentorship Impact">
                 </div>
             </div>
 
-            <div class="about-text">
-                <h2>Our Story & Mission</h2>
-                <p>HerLead Academy was founded with a simple but powerful vision: to break barriers and create pathways for women who have been left behind by traditional education systems. We understand that many women face systemic challenges—lack of formal education, limited resources, and scarce opportunities—that prevent them from building fulfilling careers and achieving financial independence.</p>
-
-                <p>Our mission is to provide accessible, practical, and income-generating skills training that empowers women to transform their lives, support their families, and contribute meaningfully to their communities. We believe that when women succeed, everyone benefits.</p>
+            <div class="why-text">
+                <h2>Accelerate Your Journey to Success</h2>
+                <p>Mentorship is one of the most proven ways to grow faster, avoid costly mistakes, and unlock opportunities you wouldn't find alone. At HerLead Academy, we connect ambitious women with experienced leaders who are passionate about lifting others up.</p>
+                <p>Our mentors bring diverse backgrounds in business, technology, social media, food entrepreneurship, and community leadership — all committed to helping you reach your full potential.</p>
 
                 <div class="mission-vision">
                     <div class="mv-card">
-                        <h3><i class="fas fa-bullseye"></i> Mission</h3>
-                        <p>Provide accessible, practical skills training that empowers women to achieve financial independence and personal growth.</p>
+                        <h3><i class="fas fa-compass"></i> Personalized</h3>
+                        <p>Every mentorship relationship is tailored to your specific goals, challenges, and pace of growth.</p>
                     </div>
                     <div class="mv-card">
-                        <h3><i class="fas fa-eye"></i> Vision</h3>
-                        <p>A world where every woman has equal access to education and opportunity, regardless of her background.</p>
+                        <h3><i class="fas fa-rocket"></i> Results-Driven</h3>
+                        <p>Our structured programs are built around measurable outcomes and real-world skills you can apply immediately.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
+    <!-- Mentorship Programs -->
+    <section class="programs" id="programs">
         <div class="section-header">
-            <span class="section-badge">Learn & Earn</span>
-            <h2 class="section-title">Our <span>Courses</span></h2>
-            <p class="section-subtitle">Master practical skills designed to help you earn income and build a successful future</p>
+            <span class="section-badge">Learn & Grow</span>
+            <h2 class="section-title">Our <span>Programs</span></h2>
+            <p class="section-subtitle">Choose the mentorship track that fits your goals and where you are on your journey</p>
         </div>
 
-        <div class="courses-grid">
-            <!-- Course 1: Social Media Marketing -->
-            <div class="course-card">
-                <div class="course-header">
-                    <img src="Social media marketing.jpg" alt="Social Media Marketing" style="width:100%;height:100%;object-fit:cover;">
+        <div class="programs-grid">
+            <!-- Program 1 -->
+            <div class="program-card">
+                <div class="program-header">
+                    <i class="fas fa-seedling"></i>
+                    <span>3 Months</span>
                 </div>
-                <div class="course-body">
-                    <h3>Social Media Marketing</h3>
-                    <p>Learn how to promote businesses and build brands online using the world's most popular social media platforms.</p>
-                    <ul>
-                        <li>Master Facebook & Instagram strategies</li>
-                        <li>Create engaging content that converts</li>
-                        <li>Master paid advertising basics</li>
-                        <li>Build your freelance social media career</li>
+                <div class="program-body">
+                    <h3>Starter Mentorship</h3>
+                    <p>Ideal for women just beginning their journey who need guidance on setting direction, building foundational skills, and gaining confidence.</p>
+                    <ul class="program-features">
+                        <li>2 sessions per month (1 hour each)</li>
+                        <li>Goal-setting workshop included</li>
+                        <li>Access to HerLead resource library</li>
+                        <li>Community group support</li>
                     </ul>
-                    <a href="#contact" class="course-btn">Enroll Now</a>
+                    <a href="#apply" class="program-btn">
+                        <i class="fas fa-arrow-right"></i>
+                        Enroll Now
+                    </a>
                 </div>
             </div>
 
-            <!-- Course 2: Computer Skills -->
-            <div class="course-card">
-                <div class="course-header">
-                    <img src="Computer-Skills.jpg" alt="Computer Skills" style="width:100%;height:100%;object-fit:cover;">
+            <!-- Program 2 -->
+            <div class="program-card">
+                <div class="program-header">
+                    <i class="fas fa-chart-line"></i>
+                    <span>6 Months</span>
                 </div>
-                <div class="course-body">
-                    <h3>Computer Skills</h3>
-                    <p>Build essential digital literacy and technical skills required for modern jobs and business success.</p>
-                    <ul>
-                        <li>Master typing & internet navigation</li>
-                        <li>Learn email & online communication</li>
-                        <li>Microsoft Office essentials</li>
-                        <li>Prepare for digital-first careers</li>
+                <div class="program-body">
+                    <h3>Growth Mentorship</h3>
+                    <p>For women actively building a business or career who need consistent, hands-on support to reach the next level of impact.</p>
+                    <ul class="program-features">
+                        <li>4 sessions per month (1 hour each)</li>
+                        <li>Personalized action plan</li>
+                        <li>WhatsApp support between sessions</li>
+                        <li>Networking event invitations</li>
                     </ul>
-                    <a href="#contact" class="course-btn">Enroll Now</a>
+                    <a href="#apply" class="program-btn">
+                        <i class="fas fa-arrow-right"></i>
+                        Enroll Now
+                    </a>
                 </div>
             </div>
 
-            <!-- Course 3: Catering & Food Service -->
-            <div class="course-card">
-                <div class="course-header">
-                    <img src="catering.jpg" alt="Catering & Food Service" style="width:100%;height:100%;object-fit:cover;">
+            <!-- Program 3 -->
+            <div class="program-card">
+                <div class="program-header">
+                    <i class="fas fa-crown"></i>
+                    <span>12 Months</span>
                 </div>
-                <div class="course-body">
-                    <h3>Catering & Food Service</h3>
-                    <p>Professional catering and food business training to start your own profitable food venture.</p>
-                    <ul>
-                        <li>Safe food preparation & hygiene</li>
-                        <li>Menu planning & recipe mastery</li>
-                        <li>Small business management</li>
-                        <li>Build a profitable catering business</li>
+                <div class="program-body">
+                    <h3>Leadership Track</h3>
+                    <p>A comprehensive program for high-potential women preparing for leadership roles, business expansion, or major career pivots.</p>
+                    <ul class="program-features">
+                        <li>Weekly sessions with senior mentor</li>
+                        <li>Leadership skills workshops</li>
+                        <li>Industry introductions & connections</li>
+                        <li>Graduation certificate</li>
                     </ul>
-                    <a href="#contact" class="course-btn">Enroll Now</a>
+                    <a href="#apply" class="program-btn">
+                        <i class="fas fa-arrow-right"></i>
+                        Enroll Now
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section (Placeholder) -->
-    <section class="testimonials" id="testimonials">
-        <div class="testimonials-content">
-            <div class="testimonials-icon">
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="testimonials-message">
-                <h3>Success Stories Coming Soon</h3>
-                <p>Be part of the first generation of HerLead Academy success stories. Join thousands of women transforming their lives through practical skills and sustainable income opportunities. Your story of transformation starts here.</p>
-                <a href="#courses" class="testimonials-cta">
-                    <i class="fas fa-arrow-right"></i>
-                    Explore Our Courses
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Meet Our Mentors -->
+    <section class="mentors-section" id="mentors">
         <div class="section-header">
-            <h2 class="section-title">Ready to Transform Your <span>Future?</span></h2>
-            <p class="section-subtitle">Join HerLead Academy today and start your journey toward financial independence, personal growth, and a brighter future for you and your family.</p>
+            <span class="section-badge">Our Mentors</span>
+            <h2 class="section-title">Meet Our <span>Mentors</span></h2>
+            <p class="section-subtitle">Learn from women who have built successful careers and are passionate about lifting others up.</p>
         </div>
-        <div class="cta-content" style="margin-top: 2.5rem;">
-            <a href="#courses" class="btn-primary" style="font-size: 1rem; padding: 1.1rem 2.5rem;">
-                <i class="fas fa-play-circle"></i>
-                Enroll in a Course Today
-            </a>
+
+        <div class="mentors-grid">
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="Women-1.jpg" alt="Amina Uwase">
+                </div>
+                <div class="mentor-info">
+                    <h3>Amina Uwase</h3>
+                    <p class="mentor-role">Digital Marketing Strategist</p>
+                    <p>With over 10 years building brands across East Africa, Amina helps women launch and grow their online businesses from scratch.</p>
+                    <div class="mentor-expertise">
+                        <span class="expertise-tag">Social Media</span>
+                        <span class="expertise-tag">Branding</span>
+                        <span class="expertise-tag">E-commerce</span>
+                    </div>
+                    <div class="mentor-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="Women-2.jpg" alt="Grace Mukamana">
+                </div>
+                <div class="mentor-info">
+                    <h3>Grace Mukamana</h3>
+                    <p class="mentor-role">Business Development Manager</p>
+                    <p>Grace has helped dozens of women-owned SMEs scale their operations with expertise in finance, planning, and leadership development.</p>
+                    <div class="mentor-expertise">
+                        <span class="expertise-tag">Business Growth</span>
+                        <span class="expertise-tag">Finance</span>
+                        <span class="expertise-tag">Leadership</span>
+                    </div>
+                    <div class="mentor-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="Women-1.jpg" alt="Claudine Ingabire">
+                </div>
+                <div class="mentor-info">
+                    <h3>Claudine Ingabire</h3>
+                    <p class="mentor-role">Tech Entrepreneur & Educator</p>
+                    <p>A passionate advocate for digital literacy, Claudine guides women entering the tech space — from computer basics to launching tech-enabled businesses.</p>
+                    <div class="mentor-expertise">
+                        <span class="expertise-tag">Tech Skills</span>
+                        <span class="expertise-tag">Entrepreneurship</span>
+                        <span class="expertise-tag">Education</span>
+                    </div>
+                    <div class="mentor-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- How It Works -->
+    <section class="how-section" id="how">
+        <div class="section-header">
+            <span class="section-badge">The Process</span>
+            <h2 class="section-title">How It <span>Works</span></h2>
+            <p class="section-subtitle">Getting matched with the right mentor is simple. Here's how our process works from start to finish.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Apply Online</h3>
+                <p>Fill out a short application telling us about your goals, background, and what you're looking for in a mentor.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Get Matched</h3>
+                <p>Our team reviews your application and carefully matches you with a mentor whose expertise aligns with your needs.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Start Sessions</h3>
+                <p>Meet with your mentor via video call or in person. Establish goals and a schedule that works for both of you.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Grow & Succeed</h3>
+                <p>Apply your mentor's guidance, track your progress, and celebrate your achievements together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section class="apply-section" id="apply">
         <div class="section-header">
             <span class="section-badge">Get In Touch</span>
-            <h2 class="section-title">Connect With <span>Us</span></h2>
-            <p class="section-subtitle">Have questions? We're here to help you get started on your learning journey.</p>
+            <h2 class="section-title">Apply for <span>Mentorship</span></h2>
+            <p class="section-subtitle">Ready to be matched with a mentor? Fill in the form and we'll be in touch within 3 business days.</p>
         </div>
 
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Reach out to us for course inquiries, enrollment support, or any questions about HerLead Academy. We're excited to support your journey.</p>
+        <div class="apply-container">
+            <div class="apply-info">
+                <h3>What Happens After You Apply?</h3>
+                <p>Our team carefully reviews every application to make the best possible mentor match. Here's what to expect.</p>
 
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                <div class="apply-methods">
+                    <div class="apply-method">
+                        <div class="method-icon"><i class="fas fa-envelope"></i></div>
                         <div class="method-info">
                             <h4>Email</h4>
-                            <p>info@herleadacademy.rw</p>
+                            <p>mentorship@herleadacademy.rw</p>
                         </div>
                     </div>
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
+                    <div class="apply-method">
+                        <div class="method-icon"><i class="fas fa-phone"></i></div>
                         <div class="method-info">
                             <h4>Phone</h4>
                             <p>+250 788 000 000</p>
                         </div>
                     </div>
-                    <div class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                    <div class="apply-method">
+                        <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="method-info">
                             <h4>Location</h4>
                             <p>Kigali, Rwanda</p>
                         </div>
                     </div>
-                </div>
-
-                <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--text-dark); font-weight: 600;">Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" class="social-link" title="Twitter" aria-label="Follow us on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" title="Facebook" aria-label="Follow us on Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-link" title="Instagram" aria-label="Follow us on Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-link" title="LinkedIn" aria-label="Follow us on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <div class="apply-method">
+                        <div class="method-icon"><i class="fas fa-clock"></i></div>
+                        <div class="method-info">
+                            <h4>Response Time</h4>
+                            <p>Within 3 business days</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <form class="contact-form" id="contactForm" novalidate>
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Your full name" aria-required="true">
+            <!-- Apply Form -->
+            <form class="apply-form" id="applyForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last name">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required placeholder="your.email@example.com" aria-required="true">
+                    <label for="applyEmail">Email Address *</label>
+                    <input type="email" id="applyEmail" name="email" required placeholder="your.email@example.com">
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" required placeholder="Tell us about your interest or ask a question..." aria-required="true"></textarea>
+                    <label for="program">Mentorship Program *</label>
+                    <select id="program" name="program" required>
+                        <option value="" disabled selected>Select a program</option>
+                        <option value="starter">Starter Mentorship (3 Months)</option>
+                        <option value="growth">Growth Mentorship (6 Months)</option>
+                        <option value="leadership">Leadership Track (12 Months)</option>
+                        <option value="become-mentor">Become a Mentor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">What are your main goals? *</label>
+                    <textarea id="goals" name="goals" required placeholder="Tell us what you hope to achieve through mentorship..."></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">
                     <i class="fas fa-paper-plane"></i>
-                    Send Message
+                    Submit Application
                 </button>
 
-                <div class="form-success" id="formSuccess">
+                <div class="form-success" id="applySuccess">
                     <i class="fas fa-check-circle"></i>
-                    Thank you! We'll get back to you soon.
+                    Application received! We'll be in touch within 3 business days.
                 </div>
             </form>
         </div>
@@ -1607,7 +1557,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="#home" class="logo">
+                <a href="index.html" class="logo">
                     <img src="Her Lead Academy Logo.png" alt="HerLead Academy" style="height:40px;width:auto;">
                     HerLead Academy
                 </a>
@@ -1617,31 +1567,32 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
                     <li><a href="mentorship.html">Mentorship</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
-                <h4>Resources</h4>
+                <h4>Mentorship</h4>
                 <ul>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#why">Why Mentorship</a></li>
+                    <li><a href="#programs">Our Programs</a></li>
+                    <li><a href="#mentors">Meet Mentors</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#apply">Apply Now</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h4>Get Involved</h4>
                 <ul>
-                    <li><a href="#contact">Become an Instructor</a></li>
-                    <li><a href="#contact">Partner With Us</a></li>
-                    <li><a href="#contact">Donate</a></li>
-                    <li><a href="#contact">Volunteer</a></li>
+                    <li><a href="#apply">Become a Mentor</a></li>
+                    <li><a href="index.html#contact">Partner With Us</a></li>
+                    <li><a href="index.html#contact">Donate</a></li>
+                    <li><a href="index.html#contact">Volunteer</a></li>
                 </ul>
             </div>
         </div>
@@ -1649,35 +1600,26 @@
         <div class="footer-bottom">
             <p>&copy; 2025 HerLead Academy. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--accent-pink);"></i> to empower women.</p>
             <div class="footer-social">
-                <a href="#" title="Twitter" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" title="Facebook" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" title="Instagram" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" title="LinkedIn" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
+    <!-- Scroll to Top -->
     <a href="#home" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
-            // ========== MOBILE NAVIGATION ========== 
+
+            // Mobile navigation
             const mobileToggle = document.getElementById('mobileToggle');
             const mobileNav = document.getElementById('mobileNav');
-            
+
             mobileToggle.addEventListener('click', function() {
                 mobileNav.classList.toggle('active');
                 const icon = mobileToggle.querySelector('i');
@@ -1685,7 +1627,6 @@
                 icon.classList.toggle('fa-times');
             });
 
-            // Close mobile nav when clicking a link
             mobileNav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', function() {
                     mobileNav.classList.remove('active');
@@ -1694,10 +1635,10 @@
                 });
             });
 
-            // ========== NAVBAR SCROLL EFFECT ========== 
+            // Navbar scroll effect
             const navbar = document.getElementById('navbar');
             const scrollTop = document.getElementById('scrollTop');
-            
+
             window.addEventListener('scroll', function() {
                 if (window.scrollY > 100) {
                     navbar.classList.add('scrolled');
@@ -1708,111 +1649,22 @@
                 }
             });
 
-            // ========== ACTIVE NAV LINK ON SCROLL ========== 
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            window.addEventListener('scroll', function() {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (scrollY >= sectionTop - 300) {
-                        current = section.getAttribute('id');
-                    }
-                });
+            // Apply form submission
+            const applyForm = document.getElementById('applyForm');
+            const applySuccess = document.getElementById('applySuccess');
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').slice(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
+            applyForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = applyForm.querySelector('.submit-btn');
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                setTimeout(() => {
+                    btn.style.display = 'none';
+                    applySuccess.classList.add('show');
+                    applyForm.reset();
+                }, 1200);
             });
-
-            // ========== ANIMATED COUNTERS ========== 
-            const counters = document.querySelectorAll('.stat-number');
-            let countersAnimated = false;
-
-            function animateCounters() {
-                counters.forEach(counter => {
-                    const target = parseInt(counter.getAttribute('data-target'));
-                    const increment = target / 60;
-                    let current = 0;
-
-                    const updateCounter = () => {
-                        if (current < target) {
-                            current += increment;
-                            counter.textContent = Math.ceil(current);
-                            setTimeout(updateCounter, 25);
-                        } else {
-                            counter.textContent = target;
-                        }
-                    };
-
-                    updateCounter();
-                });
-            }
-
-            // Intersection Observer for counter animation
-            const statsBar = document.querySelector('.stats-bar');
-            const observerOptions = {
-                threshold: 0.5,
-                rootMargin: '0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !countersAnimated) {
-                        animateCounters();
-                        countersAnimated = true;
-                    }
-                });
-            }, observerOptions);
-
-            if (statsBar) {
-                observer.observe(statsBar);
-            }
-
-            // ========== CONTACT FORM HANDLING ========== 
-            const contactForm = document.getElementById('contactForm');
-            const formSuccess = document.getElementById('formSuccess');
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Validate form
-                    if (!contactForm.checkValidity()) {
-                        alert('Please fill in all required fields.');
-                        return;
-                    }
-
-                    const submitBtn = contactForm.querySelector('.submit-btn');
-                    const originalContent = submitBtn.innerHTML;
-                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                    submitBtn.disabled = true;
-
-                    // Simulate form submission
-                    setTimeout(() => {
-                        formSuccess.classList.add('show');
-                        contactForm.reset();
-                        submitBtn.innerHTML = originalContent;
-                        submitBtn.disabled = false;
-
-                        // Hide success message after 5 seconds
-                        setTimeout(() => {
-                            formSuccess.classList.remove('show');
-                        }, 5000);
-                    }, 1500);
-                });
-            }
-
-            // ========== SMOOTH SCROLL FOR ANCHOR LINKS ========== 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const offset = 80; // Account for fixed navbar
-                        const targetPosition = target.offsetTop - offset
+        });
+    </script>
+</body>
+</html>
